@@ -205,6 +205,7 @@ int main() {
         cout << "3. Tim kiem nhan vien\n";
         cout << "4. Sap xep nhan vien\n";
         cout << "5. Sua thong tin nhan vien\n";
+        cout << "6. Xoa nhan vien\n ";
         cout << "0. Thoat !\n";
         cout << "------------------------------------\n";
         cout << "Nhap lua chon: ";
@@ -245,6 +246,14 @@ int main() {
                 danhSachNhanVien.suaThongTinNhanVien(mNV);
                 break;
             }
+            case 6: {
+                string mNV;
+                cout << "Nhap ma nhan vien can xoa: ";
+                cin.ignore();
+                getline(cin, mNV);
+                danhSachNhanVien.xoaNhanVien(mNV);
+                break;
+            }  	
             case 0:
                 return 0;
             default:
